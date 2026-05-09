@@ -12,6 +12,10 @@ public class Minimumsizesubarraysum {
         int sum=0;
         int count=0;
         int min=Integer.MAX_VALUE;
+        if(arr[i]==target){
+            System.out.print("1");
+            return;
+        }
         while(arr[i]<target){
             sum+=arr[i];
             count++;
